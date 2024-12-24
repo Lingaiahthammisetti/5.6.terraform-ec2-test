@@ -7,10 +7,10 @@ terraform {
   }
 
 backend "s3" {
-  bucket = "lingadevops-remote-state"
+  bucket = "tf-ec2-test-remote-state"
   key = "ec2-module-test"
   region = "us-east-1"
-  dynamodb_table = "lingaiah-locking"
+  dynamodb_table = "tf-ec2-test-locking"
   }
 }
 
